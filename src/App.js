@@ -3,7 +3,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     <p>Weather App</p>
+     <h1>Weather App</h1>
+     <footer>This project was coded by <a href='https://poetic-valkyrie-295501.netlify.app'>Nathalie Donado</a> </footer>
     </div>
   );
 }
