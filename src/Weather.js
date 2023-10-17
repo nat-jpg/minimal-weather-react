@@ -14,7 +14,7 @@ setWeatherData({
     city: response.data.name,
     humidity: response.data.main.humidity,
     description: response.data.weather[0].description,
-    iconUrl: "https://cdn-icons-png.flaticon.com/512/5483/5483174.png",
+    iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     date: new Date(response.data.dt * 1000),
 })
 setReady(true);
