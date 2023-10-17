@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./Weather.css";
 
@@ -13,7 +14,7 @@ setWeatherData({
     humidity: response.data.main.humidity,
     description: response.data.weather[0].description,
     iconUrl: "https://cdn-icons-png.flaticon.com/512/5483/5483174.png",
-    date: "Tuesday 11:45",
+    date: new Date(response.data.dt * 1000),
 })
 setReady(true);
     }
@@ -31,7 +32,9 @@ setReady(true);
                     </div>
                 </form>
             <h2>{weatherData.city}</h2>
-            <h4>{weatherData.date}</h4>
+            <h4>
+                <FormattedDate date={weatherData.date} />
+            </h4>
             <h3 className="text-capitalize">{weatherData.description}</h3>
             <h1>{Math.round(weatherData.temperature)}°C</h1>
             <img src={weatherData.iconUrl} alt={weatherData.description}/>
