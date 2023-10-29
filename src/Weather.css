@@ -1,8 +1,10 @@
 .weather {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "amandine", sans-serif;
     margin: 30px auto;
     width: 400px;
-    background: linear-gradient(to right, #283048, #859398);
+    background-image: url("mesh-gradient.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 padding: 16px;
 border-radius: 30px;
 }
