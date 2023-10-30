@@ -12,7 +12,7 @@ export default function WeatherInfo(props) {
             </h4>
             <h3 className="text-capitalize">{props.data.description}</h3>
             <WeatherTemperature celcius={props.data.temperature} />
-            <img src={props.data.iconUrl} alt={props.data.description}/>
+            <img className="forecast-img" src={props.data.iconUrl} alt={props.data.description}/>
             <div className="row">
                 <div className="col-6">
                     <ul>

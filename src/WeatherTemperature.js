@@ -13,7 +13,7 @@ export default function WeatherTemperature(props) {
     if (unit === 'celcius') {
     return (
         <div>
-            <h1>{Math.round(props.celcius)}°C | <a href="/" onClick={convertToFahrenheit}>°F</a></h1>
+            <h1>{Math.round(props.celcius)}°C / <a href="/" onClick={convertToFahrenheit}>°F</a></h1>
         </div>
     );
     } else {
