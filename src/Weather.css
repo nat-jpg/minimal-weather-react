@@ -30,14 +30,14 @@ border-radius: 30px;
     font-size: 20px;
     font-style: italic;
 }
-.weather img {
-    width: 150px;
+.weather img{
+    width: 100px;
     display: block;
   margin-left: auto;
   margin-right: auto;
     color: white;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .weather h1 {
     text-align: center;
