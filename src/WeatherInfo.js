@@ -2,7 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
 import "./Weather.css";
-import WeatherForecast from "./WeatherForecast";
+
 
 export default function WeatherInfo(props) {
     return (
@@ -27,7 +27,6 @@ export default function WeatherInfo(props) {
                         <li>{props.data.humidity}%</li>
                     </ul>
                 </div>
-                <WeatherForecast />
              </div>
         </div>
     );
